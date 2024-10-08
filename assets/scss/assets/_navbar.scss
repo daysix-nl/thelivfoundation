@@ -1,0 +1,83 @@
+.logo svg {
+  height: 100%;
+  width:122px;
+}
+
+.clip-foundation {
+  margin-top: -21px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  height: auto;
+  background: linear-gradient(346deg, transparent 70%, black 70%);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+
+  animation: AnimationName-foundation 15s ease;
+  -webkit-animation: AnimationName-foundation 15s ease;
+  animation-fill-mode: forwards;
+  background-size: 400% 400%;
+}
+
+@keyframes AnimationName-foundation {
+  0% {
+    background-position: 94% 0%;
+  }
+  100% {
+    background-position: 7% 100%;
+  }
+}
+
+@-webkit-keyframes AnimationName-foundation {
+  0% {
+    background-position: 94% 0%;
+  }
+  100% {
+    background-position: 7% 100%;
+  }
+}
+
+.clip-the {
+  padding-top: 11px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  height: auto;
+  background: linear-gradient(171deg, transparent 50%, black 50%);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+
+  animation: AnimationName-the 16s ease;
+  -webkit-animation: AnimationName-the 16s ease;
+  animation-fill-mode: forwards;
+  background-size: 400% 400%;
+}
+
+@keyframes AnimationName-the {
+  0% {
+    background-position: 0% 94%;
+  }
+  100% {
+    background-position: 100% 7%;
+  }
+}
+
+@-webkit-keyframes AnimationName-the {
+  0% {
+    background-position: 0% 94%;
+  }
+  100% {
+    background-position: 100% 7%;
+  }
+}

@@ -1,0 +1,158 @@
+// Specifieke backgrounds
+
+.background-half-projects {
+    background:linear-gradient(to bottom, transparent 60%, #001D63 40%);
+}
+
+.background-contact {
+    background:linear-gradient(166deg, transparent 85%, #BF7E78 85%);
+}
+
+.background-linear-home-mobile {
+    background:linear-gradient(166deg, transparent 50%, #fff 50%);
+}
+
+.background-our-mission-layer {
+    background-color: pink;
+    opacity: 1;
+
+}
+
+
+.background-our-mission-overlay {
+    background:#001D63 50%;
+}
+
+@media only screen and (min-width: 768px) {
+
+.background-our-mission-overlay {
+    background:linear-gradient(to right, transparent 50%, #001D63 50%);
+}
+
+.background-our-mission {
+    background-image: url('/wp-content/themes/thelivfoundation/img/local/background-our-mission-full.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+}
+
+
+// Meet our team
+
+.teammember-layer {
+    background:linear-gradient(166deg, transparent 70%, #001D63 70%);
+    transition: all .5s ease-in-out;
+}
+
+.teammember-layer-hover {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .2s 0s;
+    background:linear-gradient(166deg, transparent 18%, #001D63 18%);
+}
+
+.teammember:hover .teammember-layer-hover {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .2s 0s ease-in-out;
+}
+
+.teammember img {
+    scale: 1;
+}
+
+.teammember:hover img {
+    scale: 2.1;
+    transform-origin: top left;
+    transition: all 0s .2s;
+}
+
+.personal-text {
+    opacity: 0;
+    transition: 0s;
+    transition-delay: 0s;
+    transform: translate(0px, 15px);
+}
+
+.teammember:hover .personal-text {
+    opacity: 1;
+    transition: .3s;
+    transition-delay: .2s;
+    transform: translate(0px, 0px);
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+
+
+
+// Sectie backgrounds
+
+.background-linear-one {
+    background:linear-gradient(166deg, #F25A38 60%, #BF7E78 60%);
+}
+
+.background-linear-two {
+    background:linear-gradient(166deg, #F25A38 8%, #ffffff 8%);
+}
+
+.background-linear-three {
+    background:linear-gradient(166deg, #fff 28%, transparent 28%);
+}
+
+.background-linear-four {
+    background:linear-gradient(166deg, #001D63 5%, #BF7E78 5%,#BF7E78 90%, #001D63 90%);
+}
+
+.background-linear-five {
+    background:linear-gradient(166deg, #001D63 14%, transparent 14%);
+}
+
+.background-linear-six {
+    background:linear-gradient(166deg, transparent 93%, #001D63 93%);
+}
+
+.background-linear-seven {
+    background:linear-gradient(166deg, #001D63 34%, #2F241F 34%);
+}
+
+.background-linear-eight {
+    background:linear-gradient(166deg, #BF7E78 5%, #001D63 5%);
+}
+
+.background-linear-nine {
+    background:linear-gradient(166deg, #001D63 8%,  transparent 8%);
+}
+
+.background-linear-ten {
+    background:linear-gradient(166deg, #BF7E78 5%, #fff 5%);
+}
+
+.background-linear-eleven {
+    background:linear-gradient(166deg, #001D63 50%, #BF7E78 50%);
+}
+
+.background-linear-twelve {
+    background:linear-gradient(166deg, #fff 50%, #F25A38 50%);
+}
+
+.background-linear-thirteen {
+    background:linear-gradient(166deg, #BF7E78 90%, #001D63 90%);
+}
+
+.background-linear-fourteen {
+    background:linear-gradient(166deg, #001D63 20%,  transparent 20%);
+}
+
+.background-linear-fifteen {
+    background:linear-gradient(166deg, transparent 88%,  #001D63 88%);
+}
+
+.background-linear-sixteen {
+    background:linear-gradient(166deg, #BF7E78 5%, #001D63 5%);
+}
+
+
+
+

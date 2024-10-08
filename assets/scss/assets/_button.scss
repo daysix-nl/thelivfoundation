@@ -1,0 +1,42 @@
+.btn-transparent {
+  position: relative;
+  border: solid #F25A38 2px;
+  color: #001D63;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  background-image: -webkit-linear-gradient(166deg, #001D63 50%, transparent 50%);
+  background-image: linear-gradient(166deg, #001D63 50%, transparent 50%);
+  background-size: 400%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.btn-transparent:hover {
+  background-position: 0%;
+  color: #F25A38;
+  border-color: #001D63;
+}
+
+.btn-livblue {
+  position: relative;
+  border: solid #001D63 0px;
+  color: #F25A38;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  background-image: -webkit-linear-gradient(166deg, #F25A38 50%, #001D63 50%);
+  background-image: linear-gradient(166deg, #F25A38 50%, #001D63 50%);
+  background-size: 400%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.btn-livblue:hover {
+  background-position: 0%;
+  color: #001D63;
+  border-color: #F25A38;
+}
+
+
+

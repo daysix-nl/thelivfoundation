@@ -1,0 +1,17 @@
+{
+  "name": "image-text",
+  "title": "image-text",
+  "description": "A custom hero block.",
+  "category": "Text",
+  "style": ["file:./index.css"],
+  "icon": "admin-comments",
+  "keywords": ["hero", "home"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "image-text.php"
+  }
+}

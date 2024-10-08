@@ -1,0 +1,52 @@
+{
+    "key": "group_633d4ff31c4d6",
+    "title": "Styling: Block - Inner",
+    "fields": [
+        {
+            "key": "field_633d4ff323d8b",
+            "label": "Margin - Inner",
+            "name": "padding-inner",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "my-0 md:my-0": "No margin",
+                "my-2 md:my-3": "Margin",
+                "mt-2 md:mt-3": "Margin-top",
+                "mb-2 md:mb-3": "Margin-bottom"
+            },
+            "default_value": "py-0 md:py-0",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1665086659
+}

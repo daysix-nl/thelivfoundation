@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152.229" height="101.603" viewBox="0 0 152.229 101.603">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_263" data-name="Path 263" d="M690.667,15562.266l152.229-35.6v74.475H690.667Z" transform="translate(-690.667 -15526.668)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_106" data-name="Group 106" transform="translate(-544.529 -485.03)">
+    <text id="Foundation" transform="translate(556.687 581.632)" fill="#fff" font-size="22" font-family="Helvetica"><tspan x="0" y="0">Foundation</tspan></text>
+    <text id="The" transform="translate(556.687 502.03)" fill="#fff" font-size="22" font-family="Helvetica"><tspan x="0" y="0">The</tspan></text>
+    <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(544.529 486.949)" clip-path="url(#clip-path)">
+      <text id="LIV" transform="translate(6.792 66.688)" fill="#fff" font-size="96" font-family="GillSans, Gill Sans" letter-spacing="-0.06em"><tspan x="0" y="0">L</tspan><tspan y="0">IV</tspan></text>
+    </g>
+  </g>
+</svg>
