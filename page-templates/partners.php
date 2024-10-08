@@ -175,7 +175,7 @@ get_header(); ?>
                     <!--    <source src="/wp-content/themes/thelivfoundation/img/local/gapstars.mp4">-->
                     <!--</video>-->
                     <video class="video" muted controls playsinline>
-                        <source src="/wp-content/themes/thelivfoundation/img/local/gapstars.mp4">
+                        <source src="https://thelivfoundation.com/wp-content/uploads/2024/10/gapstars-low_1.mp4">
                     </video>
             </div>
         </div>
