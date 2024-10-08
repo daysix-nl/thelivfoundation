@@ -104,7 +104,7 @@ get_header(); ?>
 
     <section class="background-linear-sixteen">
         <div class="container pt-8 md:pt-12 md:w-[700px] mx-auto">
-            <p class="text-18 leading-28 font-onebold text-livpink">Here you will find all the resources you need to understand how we work and what we have achieved. Our first impact and financial reports will be made available here at the end of the 2023 financial year.</p>
+            <p class="text-18 leading-28 font-onebold text-livpink">Here you will find all the resources you need to understand how we work and what we have achieved.</p>
             <p class="text-18 leading-28 font-oneregular text-white pt-3">Please <a href="/contact/" class="underline">get in touch</a> with any questions</p>
             <p class="text-18 leading-28 font-onebold text-livpink pt-3">Policy Plan </p>
             <p class="text-18 leading-28 font-oneregular text-white"><a href="https://thelivfoundation.com/wp-content/uploads/2022/11/The_Liv_Foundation_Policy_Plan.pdf" target="_blank" class="underline">Essential reading</a> for all interested partners & potential beneficiaries</p>
@@ -113,8 +113,10 @@ get_header(); ?>
             <ul>
                 <li class="text-18 leading-28 font-oneregular text-white"><a href="https://thelivfoundation.com/wp-content/uploads/2024/03/Liv-Impact-Report-2023.pdf" class="underline" target="_blank">2022-2023</a></li>
             </ul>
-            <p class="text-18 leading-28 font-onebold text-livpink pt-3">Financial Reports (available soon)</p>
-            <p class="text-18 leading-28 font-oneregular text-white">Our annual financial report detailing how we invested donor funds</p>
+            <p class="text-18 leading-28 font-onebold text-livpink pt-3">Financial Reports</p>
+              <ul>
+                <li class="text-18 leading-28 font-oneregular text-white"><a href=https://thelivfoundation.com/wp-content/uploads/2024/05/Liv-Financial-Report-2023v2.pdf" class="underline" target="_blank">2023</a></li>
+            </ul>
         </div>
     </section>
 
