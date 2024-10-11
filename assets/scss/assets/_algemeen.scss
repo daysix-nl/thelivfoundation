@@ -87,6 +87,11 @@
 //   scroll-behavior: smooth;
 // }
 
+#vacatures {
+  scroll-margin-top: 100px;
+  /* pas dit aan naar de hoogte van je vaste header */
+}
+
 ul {
   display: block;
   list-style-type: disc;
