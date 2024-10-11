@@ -24,7 +24,7 @@
 }
 </style>
 
-<body <?php body_class( 'page bg-livbrown' ); ?>>
+<body <?php body_class( 'page bg-livbrown form-close' ); ?>>
 
 <header class="fixed top-0 right-0 left-0 z-10">
     <section class="bg-transparant  md:mt-1 pl-1 pr-2 md:pl-3 md:pr-5 flex justify-between w-full items-center">

@@ -34,7 +34,7 @@ try {
       navsix.classList.toggle("in");
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 
 
@@ -50,4 +50,68 @@ try {
       placeholder[i].classList.toggle("hidden");
     });
   }
-} catch (error) {}
+} catch (error) { }
+
+
+
+/**********************/
+/**** accordion ***/
+/**********************/
+try {
+  const acc = document.getElementsByClassName("accordion");
+
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+      this.classList.toggle("active");
+      panel.style.height =
+        panel.style.height === panel.scrollHeight + "px"
+          ? "0"
+          : panel.scrollHeight + "px";
+
+      for (let j = 0; j < acc.length; j++) {
+        if (this !== acc[j]) {
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.height = "0";
+        }
+      }
+    });
+  }
+} catch (error) { }
+
+
+
+try {
+  document.addEventListener('DOMContentLoaded', function () {
+    var openButtons = document.querySelectorAll('.open-form');
+    var closeButton = document.getElementById('close');
+    var body = document.body;
+
+    function toggleForm(event) {
+      var vacatureId = event.currentTarget.getAttribute('data-vacature-id');
+      var formField = document.querySelector('#input_3_6'); // Pas dit aan naar het juiste veld ID
+      if (formField) {
+        formField.value = vacatureId;
+      }
+
+      if (body.classList.contains('form-close')) {
+        body.classList.remove('form-close');
+        body.classList.add('form-open');
+      } else {
+        body.classList.remove('form-open');
+        body.classList.add('form-close');
+      }
+    }
+
+    openButtons.forEach(function (button) {
+      button.addEventListener('click', toggleForm);
+    });
+
+    if (closeButton) {
+      closeButton.addEventListener('click', function () {
+        body.classList.remove('form-open');
+        body.classList.add('form-close');
+      });
+    }
+  });
+} catch (error) { }

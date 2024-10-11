@@ -1,132 +1,165 @@
 #gform_submit_button_3 {
-    color: #001D63 !important;
-    border-radius: 9999px !important;
-    font-family: 'Apercu Pro Regular' !important;
-    font-size: 16px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-    position: relative !important;
-    border: solid #001D63 0px !important;
-    z-index: 1 !important;
-    transition: all 0.5s ease-in-out !important;
-    background-image: -webkit-linear-gradient(166deg, #001D63 50%, #F25A38 50%) !important;
-    background-image: linear-gradient(166deg, #001D63 50%, #F25A38 50%) !important;
-    background-size: 400% !important;
-    background-color: transparent !important;
-    background-repeat: no-repeat !important;
-    background-position: 100% !important;
+  color: #001D63 !important;
+  border-radius: 9999px !important;
+  font-family: 'Apercu Pro Regular' !important;
+  font-size: 16px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  position: relative !important;
+  border: solid #001D63 0px !important;
+  z-index: 1 !important;
+  transition: all 0.5s ease-in-out !important;
+  background-image: -webkit-linear-gradient(166deg, #001D63 50%, #F25A38 50%) !important;
+  background-image: linear-gradient(166deg, #001D63 50%, #F25A38 50%) !important;
+  background-size: 400% !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% !important;
+}
+
+#gform_submit_button_3:hover {
+  background-position: 0% !important;
+  color: #F25A38 !important;
+  border-color: #F25A38 !important;
+}
+
+#gform_submit_button_1,
+#gform_submit_button_2,
+#gform_submit_button_5 {
+  color: #F25A38 !important;
+  border-radius: 9999px !important;
+  font-family: 'Apercu Pro Regular' !important;
+  font-size: 16px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  position: relative !important;
+  border: solid #001D63 0px !important;
+  z-index: 1 !important;
+  transition: all 0.5s ease-in-out !important;
+  background-image: -webkit-linear-gradient(166deg, #F25A38 50%, #001D63 50%) !important;
+  background-image: linear-gradient(166deg, #F25A38 50%, #001D63 50%) !important;
+  background-size: 400% !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% !important;
+}
+
+#gform_submit_button_1,
+#gform_submit_button_2:hover,
+#gform_submit_button_5:hover {
+  background-position: 0% !important;
+  color: #001D63 !important;
+  border-color: #001D63 !important;
+}
+
+.contactform .gform_footer {
+  justify-content: flex-end !important;
+}
+
+.ginput_container input {
+  height: 35px !important;
+}
+
+.ginput_container select {
+  height: 35px !important;
+}
+
+.gform_wrapper .gform_body {
+  font-family: 'Apercu Pro regular' !important;
+  font-size: 16px !important;
+  color: #2F241F !important;
+}
+
+.gfield_label {
+  font-family: 'Apercu Pro bold' !important;
+  font-size: 16px !important;
+  color: #001D63 !important;
+  text-transform: uppercase !important;
+}
+
+.gfield_radio label {
+  font-family: 'Apercu Pro bold' !important;
+  font-size: 16px !important;
+  color: #001D63 !important;
+}
+
+
+
+*:focus {
+  outline: none;
+}
+
+input[type="radio"] {
+  appearance: none !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  color: #000 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #001D63 !important;
+  border-radius: 50% !important;
+  transform: translateY(-0.075em) !important;
+  margin-right: 8px !important;
+  margin-top: 2px !important;
+}
+
+input[type="radio"]:checked {
+  appearance: none !important;
+  background-color: #001D63 !important;
+  box-shadow: inset 0 0 0 2px #BF7E78 !important;
+  margin: 0 !important;
+  color: #000 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #001D63 !important;
+  border-radius: 50% !important;
+  transform: translateY(-0.075em) !important;
+  margin-right: 8px !important;
+  margin-top: 2px !important;
+}
+
+.gform_drop_area {
+  height: 65px !important;
+  padding: 20px !important;
+}
+
+.gform_drop_instructions {
+  display: none !important;
+}
+
+.gform_wrapper .gfield_required {
+  display: none !important;
+}
+
+
+
+
+.form-close {
+  #vac_form {
+    display: none;
+
+
   }
-  
-  #gform_submit_button_3:hover {
-    background-position: 0% !important;
-    color: #F25A38 !important;
-    border-color: #F25A38 !important;
+}
+
+#vac_form {
+
+
+  input.large {
+    background: #f3f3f3 !important;
   }
-  
-  #gform_submit_button_1, #gform_submit_button_2 {
-    color: #F25A38 !important;
-    border-radius: 9999px !important;
-    font-family: 'Apercu Pro Regular' !important;
-    font-size: 16px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-    position: relative !important;
-    border: solid #001D63 0px !important;
-    z-index: 1 !important;
-    transition: all 0.5s ease-in-out !important;
-    background-image: -webkit-linear-gradient(166deg, #F25A38 50%, #001D63 50%) !important;
-    background-image: linear-gradient(166deg, #F25A38 50%, #001D63 50%) !important;
-    background-size: 400% !important;
-    background-color: transparent !important;
-    background-repeat: no-repeat !important;
-    background-position: 100% !important;
+
+  .ginput_container_textarea textarea.medium {
+    background: #f3f3f3 !important;
   }
-  
-  #gform_submit_button_1, #gform_submit_button_2:hover {
-    background-position: 0% !important;
-    color: #001D63 !important;
-    border-color: #001D63 !important;
+
+  .ginput_container_fileupload input.large {
+    background: #fff !important;
   }
-  
-  .contactform .gform_footer {
-    justify-content: flex-end !important;
-  }
-  
-  .ginput_container input {
-    height: 35px !important;
-  }
-  
-  .ginput_container select {
-    height: 35px !important;
-  }
-  
-  .gform_wrapper .gform_body {
-    font-family: 'Apercu Pro regular' !important;
-    font-size: 16px !important;
-    color: #2F241F !important;
-  }
-  
-  .gfield_label {
-    font-family: 'Apercu Pro bold' !important;
-    font-size: 16px !important;
-    color: #001D63 !important;
-    text-transform: uppercase !important;
-  }
-  
-  .gfield_radio label {
-    font-family: 'Apercu Pro bold' !important;
-    font-size: 16px !important;
-    color: #001D63 !important;
-  }
-  
-  
-  
-  *:focus {
-    outline: none;
-  }
-  
-  input[type="radio"] {
-    appearance: none !important;
-    background-color: transparent !important;
-    margin: 0 !important;
-    color: #000 !important;
-    width: 12px !important  ;
-    height: 12px !important;
-    border: 1px solid #001D63 !important;
-    border-radius: 50% !important;
-    transform: translateY(-0.075em) !important;
-    margin-right: 8px !important;
-    margin-top: 2px !important;
-  }
-  
-  input[type="radio"]:checked {
-    appearance: none !important;
-    background-color: #001D63 !important;
-    box-shadow: inset 0 0 0 2px #BF7E78 !important;
-    margin: 0 !important;
-    color: #000 !important;
-    width: 12px !important  ;
-    height: 12px !important;
-    border: 1px solid #001D63 !important;
-    border-radius: 50% !important;
-    transform: translateY(-0.075em) !important;
-    margin-right: 8px !important;
-    margin-top: 2px !important;
-  }
-  
-  .gform_drop_area {
-    height: 65px !important;
-    padding: 20px !important;
-  }
-  
-  .gform_drop_instructions {
-    display: none !important;
-  }
-  
-  .gform_wrapper .gfield_required {
-    display: none !important;
-  }
+
+
+}

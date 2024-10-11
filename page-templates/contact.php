@@ -105,13 +105,110 @@ get_header(); ?>
     <section class="bg-livpink h-[100%]">
         <div class="container grid grid-cols-10 md:gap-8 py-8 md:py-12">
             <div class="col-span-10 md:col-span-5 relative-float">
-                <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Learn about our events, projects and their outcomes, and how you can get involved. We are eager to grow our passionate community of changemakers. Whether you’re interested in donating time, money or goods, helping us spread the word, or joining us on a remote mission, there’s always a way to help us make a difference.<br><br>We look forward to meeting you and hearing your ideas. If you represent a potential beneficiary project, please follow the guidelines on our <a href="/projects/" class="underline">Projects page</a>.</p>
+                <!-- <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Learn about our events, projects and their outcomes, and how you can get involved. We are eager to grow our passionate community of changemakers. Whether you’re interested in donating time, money or goods, helping us spread the word, or joining us on a remote mission, there’s always a way to help us make a difference.<br><br>We look forward to meeting you and hearing your ideas. If you represent a potential beneficiary project, please follow the guidelines on our <a href="/projects/" class="underline">Projects page</a>.</p> -->
+                <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Our goal is to create a dynamic, engaged ecosystem of partners and projects, building frameworks that strengthen these networks and effectively channel development where it’s needed most. We look forward to connecting with you and learning how we can work together. <br><br>If you represent a potential beneficiary project, please refer to the guidelines on <a href="/projects/" class="underline">Our Projects page</a>. While we are not currently accepting new project applications, we will review your submission when opportunities arise.</p>
             </div>
             <div class="col-span-10 md:col-span-5  contactform">
                 <?php gravity_form( 2, false, false, false, '', false ); ?>
             </div>
         </div>
     </section>
+
+    <section id="vacancies" class="bg-livblue">
+        <div class="title-effect-two container pt-8 md:pt-12">
+            <P class="md:text-center text-60 leading-50 md:text-100 md:leading-90 text-white font-onemedium pb-[12px]">Vacancies</P>
+
+        </div>
+        <div class="pb-8 md:pb-12 container md:w-[700px] mx-auto">
+            <div class="mt-4">
+                <p class="text-white text-20 leading-20 mb-2 font-oneregular">We’re seeking team members and consultants to help us deliver transformative change and make a lasting impact. At the heart of our mission is a strong commitment to fostering a diverse, inclusive, and equitable environment. We believe that individuals from all backgrounds should have the opportunity to contribute, grow, and thrive. 
+                <br><br>If this resonates with you, we encourage you to reach out—we’d love to welcome you into our international community.
+                </p>
+            </div>
+            <div class="mt-4">
+                <?php
+                    $loop = new WP_Query( array(
+                        'post_type' => 'vacancies',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DECS'
+                    )
+                    );
+                    ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); $post_id = get_the_ID(); ?>
+                <div class="accordion-item mt-[30px]"> 
+                    <button class="accordion font-bold text-16 leading-26 lg:text-16 lg:leading-28 xl:text-18 xl:leading-28 pr-2 md:pr-3 lg:pr-4 py-[30px]">
+                        <div class="w-full flex items-center justify-between">
+                            <h2 class="w-[50%] text-16 leading-18 text-livblue font-onerbold"><?php the_title();?></h2>
+                            <p class="w-[25%] text-16 leading-18 text-livblue font-oneregular hidden md:block"><?php echo get_field('job_type');?></p>
+                            <p class="w-[25%] justify-end pr-[30px] text-16 leading-18 text-livblue font-oneregular hidden md:flex"><?php echo get_field('location');?></p>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <div class="pb-3 pr-2 md:pb-4 md:pr-3 lg:pb-4  lg:pr-4">
+                            <hr class="mb-[30px]">
+                            <div class="text-16 leading-26 text-livblue font-onerbold text-editor"><?php the_content();?></div>
+                            <button data-vacature-id="<?php the_title();?>" class="open-form text-14 leading-20 xl:text-15 xl:leading-25 font-bold text-[#f25a38] items-center mt-[40px] flex h-fit">Apply now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6.011" height="8.575" viewBox="0 0 6.011 8.575" class="ml-[13px]">
+                                    <path id="Path_627" data-name="Path 627" d="M6.011,0,2.3,4.287,6,8.575H3.7L0,4.287,3.7,0Z" transform="translate(6.011 8.575) rotate(180)" fill="#f25a38"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; wp_reset_query(); ?>
+            </div>
+        </div>
+    </section>
+
+
+
+<div id="vac_form" class="fixed top-0 md:top-[0px] left-0 right-0 bottom-0 bg-[#00000033] z-[9999] flex justify-center items-start overflow-auto">
+    <div class="w-[100vw] md:w-[694px] lg:w-[694px] h-[100dvh] md:h-fit bg-white pb-[30px] md:pb-[70px] lg:pb-[30px] overflow-auto md:mt-[50px]">
+        <div class="flex justify-end py-[25px] px-[20px] md:px-[25px] lg:px-[30px]">
+            <svg id="close" xmlns="http://www.w3.org/2000/svg" width="12.189" height="11.949" viewBox="0 0 12.189 11.949" class="cursor-pointer">
+                <g id="Group_359" data-name="Group 359" transform="translate(-360.586 -22.344)">
+                    <line id="Line_21" data-name="Line 21" x2="9.361" y2="8.956" transform="translate(362 23.868)" fill="none" stroke="#202624" stroke-linecap="round" stroke-width="2"/>
+                    <line id="Line_23" data-name="Line 23" y1="9.121" x2="9.361" transform="translate(362 23.758)" fill="none" stroke="#202624" stroke-linecap="round" stroke-width="2"/>
+                </g>
+            </svg>
+        </div>
+        <div class="px-[20px] md:px-[25px] lg:px-[70px]">
+            <h2 class="text-25 leading-35 md:text-30 md:leading-40 lg:text-26 lg:leading-36 xl:text-30 xl:leading-40 font-bold text-[#202624]">Apply now</h2>
+            <p class="text-15 leading-28 md:text-15 md:leading-30 lg:text-15 lg:leading-28 xl:text-17 xl:leading-30 font-normal mt-[15px] lg:mt-[20px] mb-[25px]">Send your motivation letter and resume to info@thelivfoundation.com or complete our application form.</p>
+            <?php echo do_shortcode('[gravityform id="5" title="false"]'); ?>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.open-form');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var vacatureId = button.getAttribute('data-vacature-id');
+            document.getElementById('vacature-id-field').value = vacatureId; // Zet het ID in een hidden field in je formulier
+        });
+    });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('button[data-vacature-id]');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var vacatureId = button.getAttribute('data-vacature-id');
+            var formField = document.querySelector('#input_5_6'); // Het ID van het Gravity Forms veld (vervang dit met het juiste ID)
+            if (formField) {
+                formField.value = vacatureId;
+            }
+        });
+    });
+});
+</script>
+
 
 	<a href="/donate" class="floating-btn">
 <svg width="38.78px" height="30px" viewBox="0 0 53.4105832 41.3193901" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
