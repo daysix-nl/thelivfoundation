@@ -113,8 +113,8 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
-    <section id="vacancies" class="bg-livblue">
+    <div id="vacancies"></div>
+    <section class="bg-livblue">
         <div class="title-effect-two container pt-8 md:pt-12">
             <P class="md:text-center text-60 leading-50 md:text-100 md:leading-90 text-white font-onemedium pb-[12px]">Vacancies</P>
 
