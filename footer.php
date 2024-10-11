@@ -23,7 +23,7 @@
                 <a href="/partners" class="text-livred font-oneregular text-16 leadling-30">Partners</a>
                 <a href="/projects" class="text-livred font-oneregular text-16 leadling-30">Projects</a>
                 <a href="/resources" class="text-livred font-oneregular text-16 leadling-30">Resources</a>
-                <a href="/contact" class="text-livred font-oneregular text-16 leadling-30">Contact</a>
+                <a href="/connect" class="text-livred font-oneregular text-16 leadling-30">Connect</a>
             </div>
             <div class="col-span-6 md:col-span-3 flex flex-col">
                 <p class="uppercase text-livred font-onebold text-16 mb-2">Financial details</p>

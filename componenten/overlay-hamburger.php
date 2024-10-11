@@ -5,7 +5,7 @@
       <a href="/partners" class="text-26 leading-43 font-oneregular text-livred navthree">Partners</a>
       <a href="/projects" class="text-26 leading-43 font-oneregular text-livred navfour">Projects</a>
       <a href="/resources" class="text-26 leading-43 font-oneregular text-livred navfive">Resources</a>
-      <a href="/contact" class="text-26 leading-43 font-oneregular text-livred navsix">Contact</a>
+      <a href="/connect" class="text-26 leading-43 font-oneregular text-livred navsix">Connect</a>
    </section>
    <div class="container pb-6">
             <a href="/donate">
