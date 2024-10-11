@@ -95,7 +95,7 @@
         </div>
         <div class="container pb-6 relative grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
             <div class="col-span-1">
-                <p class="text-white font-oneregular text-14 leadling-24">© The Liv Foundation - 2023</p>
+                <p class="text-white font-oneregular text-14 leadling-24">© The Liv Foundation - 2024</p>
             </div>
             <div class="col-span-1">
                 <p class="text-white font-oneregular text-14 leadling-24 hidden md:block text-right">Identity and design by<br><span class="underline">Upgrade.amsterdam</span></p>
