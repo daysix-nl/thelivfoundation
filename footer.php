@@ -37,7 +37,7 @@
             <div class="col-span-6 md:col-span-3 flex flex-col">
                 <p class="uppercase text-livred font-onebold text-16 mb-2">Contact</p>
                 <a href="#" class="text-livred font-oneregular text-16 leadling-30">Address:</a>
-                <a href="#" class="text-livred font-oneregular text-16 leadling-30">Koninginneweg 1H <br>1071HZ Amsterdam  </a>
+                <a href="#" class="text-livred font-oneregular text-16 leadling-30">Johannes Verhulststraat 166H, <br>1075 HB Amsterdam  </a>
                 <a href="#" class="text-livred font-oneregular text-16 leadling-30">Email address:</a>
                 <a href="#" class="text-livred font-oneregular text-16 leadling-30">info@thelivfoundation.com</a>
                 <div class="flex mt-2">
