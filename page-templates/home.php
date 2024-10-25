@@ -110,7 +110,7 @@ get_header('home'); ?>
                 <div class="flexitem">
                     <a href="/projects" class="border-2 rounded-full text-19 py-1 px-4 font-oneregular btn-livblue">Current projects </a>
                     <a href="/donate" class="border-2 rounded-full text-19 py-1 px-4 font-oneregular btn-livblue ml-2">Support now </a>
-                    <a href="/vacancies" class="border-2 rounded-full text-19 py-1 px-4 font-oneregular btn-livblue ml-2">Join us</a>
+                    <a href="/vacancies-overview" class="border-2 rounded-full text-19 py-1 px-4 font-oneregular btn-livblue ml-2">Join us</a>
                 </div>
             </div>
             <div class="absolute -z-10 left-0 right-0 bottom-0 background-linear-home-mobile h-[50vh] md:hidden ">
