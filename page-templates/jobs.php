@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template name: Contact
+ * Template name: Jobs
  */
 get_header(); ?>
 
@@ -93,34 +93,20 @@ get_header(); ?>
 <main>
 
 
-    <section class="relative w-full h-[50vh] md:h-[90vh] overflow-hidden items-center background-contact">
-        <img src="/wp-content/themes/thelivfoundation/img/local/background-contact.jpg" alt="" class="absolute left-0 top-0 -z-10 h-full w-full object-cover">
+    <section class="relative w-full h-[50vh] md:h-[90vh] overflow-hidden items-center">
+        <img src="https://thelivfoundation.com/wp-content/uploads/2024/10/vacancies.png" alt="" class="absolute left-0 top-0 -z-10 h-full w-full object-cover">
         <div class="container grid mt-[20vh] md:mt-[40vh] text-center items-center">
             <div class="title-effect-seven">
-                <h2 class="text-60 leading-50 md:text-100 md:leading-90 font-onemedium text-white pb-[12px]">Get in touch</h2>
+                <h2 class="text-60 leading-50 md:text-100 md:leading-90 font-onemedium text-white pb-[12px]">Vacancies</h2>
             </div>
         </div>
     </section>
 
-    <section class="bg-livpink h-[100%]">
-        <div class="container grid grid-cols-10 md:gap-8 py-8 md:py-12">
-            <div class="col-span-10 md:col-span-5 relative-float">
-                <!-- <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Learn about our events, projects and their outcomes, and how you can get involved. We are eager to grow our passionate community of changemakers. Whether you’re interested in donating time, money or goods, helping us spread the word, or joining us on a remote mission, there’s always a way to help us make a difference.<br><br>We look forward to meeting you and hearing your ideas. If you represent a potential beneficiary project, please follow the guidelines on our <a href="/projects/" class="underline">Projects page</a>.</p> -->
-                <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Our goal is to create a dynamic, engaged ecosystem of partners and projects, building frameworks that strengthen these networks and effectively channel development where it’s needed most. We look forward to connecting with you and learning how we can work together. <br><br>If you represent a potential beneficiary project, please refer to the guidelines on <a href="/projects/" class="underline">Our Projects page</a>. While we are not currently accepting new project applications, we will review your submission when opportunities arise.</p>
-            </div>
-            <div class="col-span-10 md:col-span-5  contactform">
-                <?php gravity_form( 2, false, false, false, '', false ); ?>
-            </div>
-        </div>
-    </section>
-    <div id="vacancies"></div>
-    <section class="bg-livblue">
-        <div class="title-effect-two container pt-8 md:pt-12">
-            <P class="md:text-center text-60 leading-50 md:text-100 md:leading-90 text-white font-onemedium pb-[12px]">Vacancies</P>
-
-        </div>
+   
+    <section class="background-linear-sixteen">
+       
         <div class="pb-8 md:pb-12 container md:w-[700px] mx-auto">
-            <div class="mt-4">
+            <div class="pt-8 md:pt-12">
                 <p class="text-white text-20 leading-20 mb-2 font-oneregular">We’re seeking team members and consultants to help us deliver transformative change and make a lasting impact. At the heart of our mission is a strong commitment to fostering a diverse, inclusive, and equitable environment. We believe that individuals from all backgrounds should have the opportunity to contribute, grow, and thrive. 
                 <br><br>If this resonates with you, we encourage you to reach out—we’d love to welcome you into our international community.
                 </p>

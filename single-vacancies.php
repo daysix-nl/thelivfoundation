@@ -1,11 +1,34 @@
 <?php 
 /**
- * Template name: Contact
+ * The single post template file
+ * 
+ * @package Day Six theme
  */
+
+
+
 get_header(); ?>
 
 <style>
-.floating-btn {
+	.text-white p {
+		color: #fff !important;
+	}
+	
+	a {
+		color: #f25a38 !important;
+	}
+	
+	strong {
+		    font-weight: 700 !important;
+    text-decoration: underline;
+	}
+	
+	.edit {
+		display: grid !important;
+		gap: 25px !important;
+	}
+	
+	.floating-btn {
     position: fixed;
     width: 90px;
     height: 50px;
@@ -87,102 +110,54 @@ get_header(); ?>
     opacity: 1;
     transition-delay: .2s;
 }
-</style>
 
+.text-livbluex strong, .text-livbluex span, .text-livbluex b, .text-livbluex {
+    color: #2f241f !important;
+}
+.text-livbluex p {
+        margin-bottom: 8px;
+}
+.text-livbluex b {
+    font-family: Apercu Pro Bold, sans-serif !important;
+}
+</style>
 
 <main>
 
+   
 
-    <section class="relative w-full h-[50vh] md:h-[90vh] overflow-hidden items-center background-contact">
-        <img src="/wp-content/themes/thelivfoundation/img/local/background-contact.jpg" alt="" class="absolute left-0 top-0 -z-10 h-full w-full object-cover">
-        <div class="container grid mt-[20vh] md:mt-[40vh] text-center items-center">
-            <div class="title-effect-seven">
-                <h2 class="text-60 leading-50 md:text-100 md:leading-90 font-onemedium text-white pb-[12px]">Get in touch</h2>
+    <!--FLEXIBLE BLOCK START  -->
+    <section class=" bg-livpink pt-[30px]">
+    <div class="container grid grid-cols-10 pt-8 md:pt-12 gap-3 pb-8 md:pb-12">
+            <div class="col-span-10 md:col-span-7 mb-3">
+                <p class="text-26 leading-40 text-livblue font-onemono"><?php the_title(); ?></p>
+            </div>
+            <div class="col-span-10 md:col-span-9 md:mr-3">
+                <div class="text-18 leading-28 text-livbluex font-oneregular"><?php the_content();?></div>
+				<div class="text-18 leading-28 text-livbluex font-oneregular edit"><?php the_field('content');?></div>
             </div>
         </div>
     </section>
 
-    <section class="bg-livpink h-[100%]">
-        <div class="container grid grid-cols-10 md:gap-8 py-8 md:py-12">
-            <div class="col-span-10 md:col-span-5 relative-float">
-                <!-- <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Learn about our events, projects and their outcomes, and how you can get involved. We are eager to grow our passionate community of changemakers. Whether you’re interested in donating time, money or goods, helping us spread the word, or joining us on a remote mission, there’s always a way to help us make a difference.<br><br>We look forward to meeting you and hearing your ideas. If you represent a potential beneficiary project, please follow the guidelines on our <a href="/projects/" class="underline">Projects page</a>.</p> -->
-                <p class="text-18 leading-28 text-livblue font-oneregular float-contact-text">Our goal is to create a dynamic, engaged ecosystem of partners and projects, building frameworks that strengthen these networks and effectively channel development where it’s needed most. We look forward to connecting with you and learning how we can work together. <br><br>If you represent a potential beneficiary project, please refer to the guidelines on <a href="/projects/" class="underline">Our Projects page</a>. While we are not currently accepting new project applications, we will review your submission when opportunities arise.</p>
-            </div>
-            <div class="col-span-10 md:col-span-5  contactform">
-                <?php gravity_form( 2, false, false, false, '', false ); ?>
-            </div>
-        </div>
-    </section>
-    <div id="vacancies"></div>
-    <section class="bg-livblue">
-        <div class="title-effect-two container pt-8 md:pt-12">
-            <P class="md:text-center text-60 leading-50 md:text-100 md:leading-90 text-white font-onemedium pb-[12px]">Vacancies</P>
+      <section class="bg-livblue">
+        <div class="container">
+             <div class="title-effect-two container pt-8 md:pt-12">
+                <P class="md:text-center text-60 leading-50 md:text-100 md:leading-90 text-white font-onemedium pb-[12px]">Apply now</P>
 
-        </div>
-        <div class="pb-8 md:pb-12 container md:w-[700px] mx-auto">
-            <div class="mt-4">
-                <p class="text-white text-20 leading-20 mb-2 font-oneregular">We’re seeking team members and consultants to help us deliver transformative change and make a lasting impact. At the heart of our mission is a strong commitment to fostering a diverse, inclusive, and equitable environment. We believe that individuals from all backgrounds should have the opportunity to contribute, grow, and thrive. 
-                <br><br>If this resonates with you, we encourage you to reach out—we’d love to welcome you into our international community.
+             </div>
+             <div class="mt-4">
+                <p class="text-white text-20 leading-20 mb-2 font-oneregular">Send your motivation letter and resume to info@thelivfoundation.com or complete our application form.
                 </p>
             </div>
-            <div class="mt-4">
-                <?php
-                    $loop = new WP_Query( array(
-                        'post_type' => 'vacancies',
-                        'posts_per_page' => -1,
-                        'orderby' => 'date',
-                        'order' => 'DECS'
-                    )
-                    );
-                    ?>
-                <?php while ( $loop->have_posts() ) : $loop->the_post(); $post_id = get_the_ID(); ?>
-                <div class="mt-[30px] bg-white w-full h-[80px] pl-[30px]"> 
-                    <a href="<?php the_permalink();?>" class=" py-[30px]">
-                        <div class="w-full h-full flex items-center justify-between">
-                            <h2 class="w-[50%] text-16 leading-18 text-livblue font-onerbold font-bold"><?php the_title();?></h2>
-                            <p class="w-[25%] text-16 leading-18 text-livblue font-oneregular hidden md:block"><?php echo get_field('job_type');?></p>
-                            <p class="w-[25%] justify-end pr-[30px] text-16 leading-18 text-livblue font-oneregular hidden md:flex"><?php echo get_field('location');?></p>
-                        </div>
-                    </a>
-                </div>
-                <?php endwhile; wp_reset_query(); ?>
+            <div class="vacform py-[30px]">
+                <?php echo do_shortcode('[gravityform id="5" title="false"]'); ?>
             </div>
         </div>
     </section>
-
-
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var buttons = document.querySelectorAll('.open-form');
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var vacatureId = button.getAttribute('data-vacature-id');
-            document.getElementById('vacature-id-field').value = vacatureId; // Zet het ID in een hidden field in je formulier
-        });
-    });
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    var buttons = document.querySelectorAll('button[data-vacature-id]');
-
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            var vacatureId = button.getAttribute('data-vacature-id');
-            var formField = document.querySelector('#input_5_6'); // Het ID van het Gravity Forms veld (vervang dit met het juiste ID)
-            if (formField) {
-                formField.value = vacatureId;
-            }
-        });
-    });
-});
-</script>
-
-
+   
+    
+    <!--FLEXIBLE BLOCK END  -->
+	
 	<a href="/donate" class="floating-btn">
 <svg width="38.78px" height="30px" viewBox="0 0 53.4105832 41.3193901" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -198,4 +173,4 @@ document.addEventListener('DOMContentLoaded', function () {
 </svg><span>Donate here</span></a>
 
 </main>
-<?php get_footer(); ?>
+<?php get_footer(''); ?>
