@@ -124,6 +124,7 @@ get_header(); ?>
             </div>
             <div class="col-span-8 pb-8 md:pb-12 md:pt-1">
                 <P class="text-18 leading-28 text-white font-oneregular">For consideration, please <a href="/contact" class="underline">contact us</a> with your proposal. Make sure to include a clear project plan with measurable targets and budget. The final selection will be based on additional conditions such as the availability of funds. All shortlisted beneficiaries will be notified immediately after the relevant quarterly meeting.<br><br>Please review our <a href="/resources/" class="underline">Policy Plan</a>  for more information about our project targets and selection process. </P>
+                <p class="text-18 leading-28 text-livblue font-oneregular mt-[20px]">NOTE: We are not currently accepting new project applications, but will review submissions as soon as opportunities arise</p>
             </div>
         </div>
     </section>
