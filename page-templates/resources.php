@@ -112,7 +112,7 @@ get_header(); ?>
             <p class="text-18 leading-28 font-oneregular text-white">What we delivered to our partners at the end of their funding period</p>
             <ul>
                 <li class="text-18 leading-28 font-oneregular text-white"><a href="https://thelivfoundation.com/wp-content/uploads/2024/03/Liv-Impact-Report-2023.pdf" class="underline" target="_blank">2022-2023</a></li>
-                <li class="text-18 leading-28 font-oneregular text-white"><a href="https://thelivfoundation.com/wp-content/uploads/2024/12/Liv-Impact-Report-2024.pdf" class="underline" target="_blank">2023-2024</a></li>
+                <li class="text-18 leading-28 font-oneregular text-white"><a href="https://thelivfoundation.com/wp-content/uploads/2024/12/Liv-Impact-Report-2024.pdf" class="underline" target="_blank">2024</a></li>
             </ul>
             <p class="text-18 leading-28 font-onebold text-livpink pt-3">Financial Reports</p>
               <ul>
